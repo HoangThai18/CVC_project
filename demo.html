@@ -1,0 +1,64 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css" />
+  </head>
+  <body>
+    <div class="banner container">
+      <div class="banner-images">
+        <img
+          class="img-fluid active"
+          src="./assets/Banner/Banner1.png"
+          alt="Banner1"
+        />
+        <img
+          class="img-fluid"
+          src="./assets/Banner/Banner2.png"
+          alt="Banner2"
+        />
+        <img
+          class="img-fluid"
+          src="./assets/Banner/Banner3.png"
+          alt="Banner3"
+        />
+        <div class="banner-index"></div>
+      </div>
+    </div>
+  </body>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script>
+    const images = document.querySelectorAll(".banner-images img");
+    let currentImage = 0;
+    const maxImage = images.length - 1;
+
+    images[currentImage].classList.add("active");
+
+    setInterval(() => {
+      images[currentImage].classList.remove("active");
+      currentImage = currentImage === maxImage ? 0 : ++currentImage;
+      images[currentImage].classList.add("active");
+      updateSlider();
+    }, 3000);
+
+    const indexDiv = document.querySelector(".banner-index");
+    images.forEach(() => {
+      const indexSpan = document.createElement("span");
+      indexDiv.appendChild(indexSpan);
+    });
+
+    updateSlider();
+
+    function updateSlider() {
+      const indexSpans = document.querySelectorAll(".banner-index span");
+      indexSpans.forEach((span) => span.classList.remove("active"));
+      indexSpans[currentImage].classList.add("active");
+    }
+  </script>
+</html>

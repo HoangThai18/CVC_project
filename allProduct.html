@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cao Việt Cường</title>
+    <link rel="stylesheet" href="./assets/loaiSp.css" />
+    <link rel="stylesheet" href="./assets/lazy_loading/lazyloading.js" />
+    <link rel="stylesheet" href="./assets/responsiveLSP.css" />
+    <link rel="stylesheet" href="./CVS.js" />
+    <link rel="stylesheet" href="./assets/header_footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/header_footer.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+    <link
+      Updated
+      upstream
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/img/favicon.ico" />
+    <link rel="stylesheet" href="./CVS.js" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- font awesome pro cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/header_footer.css" />
+  </head>
+  <body class="body-section">
+    <div id="main">
+      <!-- header start-->
+      <header id="header" class="container-fluid">
+        <div class="container">
+          <div class="header-item row">
+            <div class="header_logo col-xl-7 col-md-6 col-sm-7 col-4">
+              <div class="header_logo--img col-xl-2">
+                <a href="./index.html">
+                  <img
+                    class="responsive_logo"
+                    src="./assets/img/LogoCVC.gif"
+                    alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="search-container col-xl-4 col-md-4 col-5 col-sm-3">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Tìm kiếm"
+                onclick="performSearch()" />
+              <button class="search-button">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+
+            <div class="header_bag col-xl-1 col-md-2 col-2 Th-tooltip col-sm-2">
+              <a href="" class="bag-icona">
+                <i class="bi bi-bag icon-bag--big"> </i>
+                <div class="sub_bag">
+                  <p class="sub_bag--content">0</p>
+                </div>
+              </a>
+              <div class="Th-fix">
+                <svg
+                  class="Th-triangle"
+                  viewBox="0 0 90 100"
+                  width="40"
+                  height="40">
+                  <polygon
+                    points="50 10, 90 70, 10 90"
+                    fill="white"
+                    stroke="black"
+                    stroke-width="1" />
+                </svg>
+                <div class="Th-tooltiptext">
+                  <i class="fa-solid fa-circle-exclamation fa-2xl"></i>
+                  <p>Chưa có sản phẩm trong giỏ hàng</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- navigation start -->
+        <div id="category" class="container">
+          <div class="row category_row">
+            <div id="category_items" class="row col-md-12 col-xl-12">
+              <div class="col px-0 Th-list-top">
+                <div class="dropdown">
+                  <button class="dropbtn drop-two">Giải pháp</button>
+                  <div class="dropdown-content drop-sub-two">
+                    <a class="Th-set-sub" href="./loaiSp.html?id=1"
+                      >Báo mức chất rắn</a
+                    >
+                    <a class="Th-set-sub" href="./loaiSp.html?id=2"
+                      >Báo mức chất lỏng</a
+                    >
+                    <a class="Th-set-sub" href="./loaiSp.html?id=3"
+                      >Giải pháp đo mức</a
+                    >
+                    <a
+                      class="Th-set-sub Th-boder-radius"
+                      href="./loaiSp.html?id=4"
+                      >Đo mức Lv Gauge</a
+                    >
+                  </div>
+                </div>
+                <div id="catery_icon" class="col-md-1 col-sm-2 col-3">
+                  <div id="category_icon--icon" class="catery_icon--icon">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col px-0 Th-list-top">
+                <div class="dropdown">
+                  <button
+                    onclick="myFunctiontwo();closeDropdowns();"
+                    class="dropbtn drop-two">
+                    Lưu lượng
+                  </button>
+                  <div id="myDropdowntwo" class="dropdown-content drop-sub-two">
+                    <a class="Th-set-sub" href="./loaiSp.html?id=5"
+                      >Lưu lượng kế điện từ</a
+                    >
+                    <a class="Th-set-sub" href="./loaiSp.html?id=6"
+                      >Lưu lượng kế dạng phao</a
+                    >
+                    <a class="Th-set-sub" href="./loaiSp.html?id=7"
+                      >Đồng hồ đo lưu lượng</a
+                    >
+                    <a
+                      class="Th-set-sub Th-boder-radius"
+                      href="./loaiSp.html?id=8"
+                      >Công tắc dòng chảy</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col px-0 Th-list-top">
+                <div class="dropdown">
+                  <button
+                    onclick="myFunctionthree();closeDropdowns();"
+                    class="dropbtn drop-two">
+                    Nhiệt độ
+                  </button>
+                  <div
+                    id="myDropdownthree"
+                    class="dropdown-content drop-sub-two">
+                    <a class="Th-set-sub" href="./loaiSp.html?id=9"
+                      >Công tắc nhiệt độ New-Flow</a
+                    >
+                    <a class="Th-set-sub" href="./loaiSp.html?id=10"
+                      >Cảm biến nhiệt độ (Temperture)</a
+                    >
+                    <a class="Th-set-sub" href="./loaiSp.html?id=11"
+                      >Cảm biến Hawk Gauge</a
+                    >
+                    <a
+                      class="Th-set-sub Th-boder-radius"
+                      href="./loaiSp.html?id=12"
+                      >Máy đo áp suất cầm tay</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col px-0 Th-list-top">
+                <div class="dropdown">
+                  <button
+                    onclick="myFunctionfour();closeDropdowns();"
+                    class="dropbtn drop-two">
+                    Áp suất
+                  </button>
+                  <div
+                    id="myDropdownfour"
+                    class="dropdown-content drop-sub-two">
+                    <a class="Th-set-sub" href="./loaiSp.html?id=13"
+                      >Đồng hồ áp suất màng</a
+                    >
+                    <a class="Th-set-sub" href="./loaiSp.html?id=14"
+                      >Công tắc áp suất</a
+                    >
+                    <a class="Th-set-sub" href="./loaiSp.html?id=15"
+                      >Đồng hồ đo chênh lệch áp suất
+                    </a>
+                    <a
+                      class="Th-set-sub Th-boder-radius"
+                      href="./loaiSp.html?id=16"
+                      >Đồng hồ Magnehelic Dwyer</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col px-0 Th-list-top">
+                <div class="dropdown">
+                  <button
+                    onclick="myFunctionfive();closeDropdowns();"
+                    class="dropbtn drop-two">
+                    Sản phẩm khác
+                  </button>
+                  <div
+                    id="myDropdownfive"
+                    class="dropdown-content drop-sub-two">
+                    <a class="Th-set-sub" href="./loaiSp.html?id=20"
+                      >Đo mức bằng sóng siêu âm</a
+                    >
+                    <a class="Th-set-sub" href="./loaiSp.html?id=21"
+                      >Đo mức bằng sóng thủy</a
+                    >
+                    <a class="Th-set-sub" href="./loaiSp.html?id=22"
+                      >Máy đo tốc độ gió</a
+                    >
+                    <a class="Th-set-sub" href="./loaiSp.html?id=23"
+                      >Thiết bị phân tích chất lỏng</a
+                    >
+                    <a class="Th-set-sub" href="./loaiSp.html?id=24">MF</a>
+                    <a class="Th-set-sub" href="./loaiSp.html?id=25">MU</a>
+                    <a class="Th-set-sub" href="./loaiSp.html?id=26"
+                      >Sản phẩm Nivelco</a
+                    >
+                    <a
+                      class="Th-set-sub Th-boder-radius"
+                      href="./loaiSp.html?id=27"
+                      >Các thiết bị phòng sạch</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col px-0 Th-list-top">
+                <div class="dropdown">
+                  <button class="dropbtn">Van</button>
+                </div>
+              </div>
+              <div class="col px-0 Th-list-top">
+                <div class="dropdown">
+                  <button
+                    onclick="myFunctionseven();closeDropdowns();"
+                    class="dropbtn drop-two">
+                    Bộ hiển thị
+                  </button>
+                  <div
+                    id="myDropdownseven"
+                    class="dropdown-content drop-sub-two">
+                    <a class="Th-set-sub" href="#home">Màn hình Nivelco</a>
+                    <a class="Th-set-sub Th-boder-radius" href="#about"
+                      >Bộ hiển thị lưu lượng, mức,...</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- navigation end -->
+      </header>
+      <!-- header end -->
+
+      <!-- body -->
+      <body class="container-fluid">
+        <div id="body" class="container">
+          <div class="body_list--items">
+            <!-- product start-->
+            <div class="product container">
+              <div class="title row">
+                <p class="title-top mt-3 col-md-4 col-xl-4 col-8">
+                  Tất cả sản phẩm
+                </p>
+              </div>
+
+              <div
+                class="product_list--items product-grid row"
+                id="product-list"></div>
+            </div>
+            <div class="body_list--items loading-overlay" id="body">
+              <div class="loading-spinner"></div>
+            </div>
+            <!-- product end -->
+          </div>
+        </div>
+        <div id="" class=""></div>
+      </body>
+      <!-- footer start-->
+      <footer class="Th-ft">
+        <div id="footer">
+          <div class="container text-md-sta rt">
+            <div class="row">
+              <div class="col-sm-12 col-lg-4 mt-2 Th-footer">
+                <div class="row">
+                  <img
+                    class="img-fluid"
+                    src="./assets/img/ezgif.com-crop.gif"
+                    alt="" />
+                  <p class="mt-3">
+                    Tự hào là đại diện phân phối duy nhất và chính thức tập đoàn
+                    Nivelco-Newflow-Dongyang-Flomec-Matic-Hawk gauge tại Việt
+                    Nam
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-5 mt-4 col-sm-6">
+                <h6 class="Th-text-footer fw-bold mb-2">
+                  Công ty TNHH TM DV Kỹ Thuật CAO VIỆT CƯỜNG
+                </h6>
+                <ul class="list-unstyled Th-icon-footer">
+                  <li class="mb-2">
+                    <i class="fa-solid fa-house"></i>
+                    <p class="d-inline">
+                      83/29 Vườn Lài, Phường Phú Thọ Hòa, Quận Tân Phú, TP. HCM
+                    </p>
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-telephone-fill"></i>
+                    <p class="d-inline">(84-8) 3813 4681 / 82</p>
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-globe"></i>
+                    <p class="d-inline">www.caovietcuong.com</p>
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p class="d-inline">sales@caovietcuong.com</p>
+                  </li>
+                  <li class="mb-2">
+                    <img
+                      class="img-fluid"
+                      src="./assets/img/phone.png"
+                      alt="" />
+                    <p class="d-inline">
+                      0908 507 021 - Daisy Le/ 0909 951 237 Mr.Thiêm
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-sm-6 Th-set-doitac">
+                <h6 class="Th-text-footer text-uppercase fw-bold mt-4">
+                  ĐỐI TÁC CUNG ỨNG
+                </h6>
+                <img class="img-fluid" src=".//assets/img/doitac.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Th-copy text-center mt-1 mg-0">
+          <p>Copyright © 2023 Patronum</p>
+        </div>
+      </footer>
+      <!-- footer end -->
+      <!-- Call number start -->
+      <a id="call-number" href="./Chitietsp.html" style="text-decoration: none">
+        <img src="./assets/img/call_number.gif" alt="" />
+      </a>
+      <!-- Call number end -->
+      <!-- nut chuyen trang start -->
+      <a href="#" id="page_top"> <i class="fa-solid fa-chevron-up"></i> </a>
+      <!-- nut chuyen trang end -->
+    </div>
+    <!-- filter start -->
+    <div id="filter" class="filter_modal">
+      <div class="filter_container js-filter_container container">
+        <div class="filter_close row">
+          <div class="filter_model--close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="filter_top container">
+          <div class="filter_top--title row">
+            <div class="filter_top--content col-sm-3 col-md-3 col-xl-3 col-4">
+              <p>Hiển thị theo</p>
+            </div>
+            <div class="filter_top--content col-sm-3 col-md-4 col-xl-3 col-4">
+              <p>Quốc gia sản xuất</p>
+            </div>
+            <div class="filter_top--content col-sm-3 col-md-4 col-xl-3 col-4">
+              <p>Hãng sản xuất</p>
+            </div>
+          </div>
+          <div class="filter_top--title row">
+            <div class="filter_top--contents col-sm-3 col-md-4 col-xl-3 col-4">
+              <button onclick="changeColor(this)" data-state="0">
+                Mới nhất
+              </button>
+              <button onclick="changeColor(this)" data-state="0">
+                Phổ biến
+              </button>
+              <button onclick="changeColor(this)" data-state="0">
+                Phổ biến
+              </button>
+              <button onclick="changeColor(this)" data-state="0">
+                Phổ biến
+              </button>
+            </div>
+            <div class="filter_top--contents col-sm-3 col-md-4 col-xl-3 col-4">
+              <select class="Th-option">
+                <option value="option1">Quốc gia</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <option value="option4">Option 4</option>
+              </select>
+            </div>
+            <div class="filter_top--contents col-sm-3 col-md-4 col-xl-3 col-4">
+              <select class="Th-fit">
+                <option class="set-option" value="option1">Hãng</option>
+                <option class="set-option" value="option2">Option 2</option>
+                <option class="set-option" value="option3">Option 3</option>
+                <option class="set-option" value="option4">Option 4</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter_bottom container">
+          <div class="filter_top--title row">
+            <div class="filter_top--content col-sm-6 col-md-3 col-xl-3 col-5">
+              <p>Hiển thị theo</p>
+            </div>
+            <div class="filter_top--content col-sm-6 col-md-4 col-xl-3 col-7">
+              <p>Chọn màu sản phẩm</p>
+            </div>
+            <div class="filter_top--content col-sm-12 col-md-4 col-xl-3 col-12">
+              <p class="set-mobie">Giá</p>
+            </div>
+          </div>
+          <div class="filter_top--title row">
+            <div class="filter_top--contents col-sm-6 col-md-3 col-xl-3 col-5">
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                Dưới 1 năm
+              </button>
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                1 năm
+              </button>
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                Trên 2 năm
+              </button>
+            </div>
+            <div class="filter_top--contents col-sm-6 col-md-4 col-xl-3 col-7">
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                Trắng
+              </button>
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                Vàng
+              </button>
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                Xanh lá
+              </button>
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                Đen
+              </button>
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                Đỏ
+              </button>
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                Cam
+              </button>
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                Xám
+              </button>
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                Xanh dương
+              </button>
+            </div>
+            <div
+              class="filter_top--contents col-sm-12 col-md-4 col-xl-3 col-12">
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                Liên hệ
+              </button>
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                Dưới 1 triệu
+              </button>
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                1 tr - 5 tr
+              </button>
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                5 tr - 10 tr
+              </button>
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                10 tr - 20 tr
+              </button>
+              <button
+                class="Th-fit-color"
+                onclick="changeColor(this)"
+                data-state="0">
+                Trên 20 triệu
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="filter_2button row">
+          <button class="col-5 col-xl-6 filter_btn--1">Bỏ chọn</button>
+          <button class="col-5 col-xl-6 filter_btn--2">Xem kết quả</button>
+        </div>
+      </div>
+    </div>
+    <!-- filter end -->
+
+    <!-- Danh muc Mobile vaf Tablet -->
+    <script src="app.js"></script>
+    <!-- Tat mo danh muc sp -->
+    <script>
+      var category = document.getElementById("category");
+      var categoryMenu = document.getElementById("category_icon--icon");
+      var categoryHeight = category.clientHeight;
+      categoryMenu.onclick = function () {
+        var isClosed = category.clientHeight === categoryHeight;
+        if (isClosed) {
+          category.style.height = "auto";
+        } else {
+          category.style.height = null;
+        }
+      };
+    </script>
+    <!--  -->
+    <!-- Filter Modal -->
+    <script>
+      const filterBtn = document.querySelector(".js-filter_icon");
+      const filterModal = document.querySelector(".filter_modal");
+      const filterClosed = document.querySelector(".filter_model--close");
+      const filterCt = document.querySelector(".js-filter_container");
+      function showFilter() {
+        filterModal.classList.add("open");
+      }
+      function hideFilter() {
+        filterModal.classList.remove("open");
+      }
+      filterBtn.addEventListener("click", showFilter);
+      filterClosed.addEventListener("click", hideFilter);
+      filterModal.addEventListener("click", hideFilter);
+      filterCt.addEventListener("click", function (event) {
+        event.stopPropagation();
+      });
+    </script>
+    <!--  -->
+    <!-- bam vao chon o trong filter -->
+    <script>
+      function changeColor(button) {
+        if (button.getAttribute("data-state") == "0") {
+          button.style.backgroundColor = "#f53100";
+          button.style.color = "white";
+          button.setAttribute("data-state", "1");
+        } else {
+          button.style.backgroundColor = "white";
+          button.style.color = "#000";
+          button.setAttribute("data-state", "0");
+        }
+      }
+    </script>
+    <script src="getall.js"></script>
+    <script>
+      getAllItems();
+    </script>
+    <script>
+      // Lấy tham số keyword từ URL
+      var urlParams = new URLSearchParams(window.location.search);
+      var keyword = urlParams.get("keyword");
+
+      if (keyword) {
+        // Gửi yêu cầu tìm kiếm đến API
+        var apiUrl =
+          "https://patronum.azurewebsites.net/api/HomePage/SearchByKeyword?keyword=" +
+          encodeURIComponent(keyword);
+        fetch(apiUrl)
+          .then((response) => response.json())
+          .then((data) => {
+            // Xử lý kết quả tìm kiếm và hiển thị trên trang
+            var productGrid = document.getElementById("product-list");
+            productGrid.innerHTML = "";
+
+            data.forEach((product) => {
+              const productItem = document.createElement("div");
+              productItem.classList.add(
+                "product_items",
+                "lazy",
+                "col-md-3",
+                "col-xl",
+                "col-4",
+                "px-5"
+              );
+
+              // Kiểm tra status của sản phẩm và thêm hình ảnh hot nếu cần
+              const productA = document.createElement("a");
+              productA.classList.add("set-text");
+              productA.href = "";
+
+              // Kiểm tra status của sản phẩm
+              if (product.status === 1 || product.status === 2) {
+                // Tao the div bao hoc hot
+                const productHot = document.createElement("div");
+                productHot.classList.add("product_hot");
+                productA.appendChild(productHot);
+                const hotImage = document.createElement("img");
+                hotImage.src = "./assets/iimg/hot.png";
+                productHot.appendChild(hotImage);
+              }
+
+              // Tao the div bao boc hinh anh san pham
+              const productImage = document.createElement("div");
+              productImage.classList.add("product_items--img");
+              // Tao the img ben trong the div chua anh san pham
+              const productImageImg = document.createElement("img");
+              productImageImg.classList.add("truong", "col-12");
+              productImageImg.src = product.productImg;
+              productImage.appendChild(productImageImg);
+
+              // Tao the chua noi dung san pham
+              const productItemContent = document.createElement("div");
+              productItemContent.classList.add("product_items--content");
+
+              // Tao the p chua ten san pham
+              // Tạo phần tử "product-name" và thêm nội dung
+              const productName = document.createElement("p");
+              productName.classList.add("product_item_name");
+              productName.innerText = product.name;
+              productItemContent.appendChild(productName);
+
+              // Tao the chua Product Contact
+              const productContact = document.createElement("div");
+              productContact.classList.add("product_contact");
+              productItemContent.appendChild(productContact);
+
+              // Tạo phần tử "product-price" và thêm nội dung
+              const productPrice = document.createElement("div");
+              productPrice.classList.add("contact_text");
+              productPrice.innerHTML += ` Giá: `;
+              productContact.appendChild(productPrice);
+
+              // Tao the a chua dien thoai va lien he
+              const productContactCall = document.createElement("a");
+              productContactCall.classList.add("contact_call");
+              productContact.appendChild(productContactCall);
+
+              // Tao the div chua icon call
+              const productCallIcon = document.createElement("div");
+              productCallIcon.classList.add("contact_call--icon");
+              productContactCall.appendChild(productCallIcon);
+              // Tạo phần tử <i> cho icon
+              const cartIcon = document.createElement("i");
+              cartIcon.classList.add("fa-light", "fa-phone-volume");
+              productCallIcon.appendChild(cartIcon);
+              // Product Lien He
+              const productLienHe = document.createElement("p");
+              productLienHe.innerHTML += "Liên hệ";
+              productContactCall.appendChild(productLienHe);
+
+              // Product add
+              const productAdd = document.createElement("div");
+              productAdd.classList.add("product_add");
+              productContact.appendChild(productAdd);
+              // Tao the a chua icon add
+              const productAddIcon = document.createElement("a");
+              productAddIcon.href = "";
+              productAdd.appendChild(productAddIcon);
+
+              const priceIcon = document.createElement("i");
+              priceIcon.classList.add("fa-light", "fa-cart-circle-plus");
+              productAddIcon.appendChild(priceIcon);
+
+              // Thêm các phần tử vào trong phần tử "product-item"
+              productItem.appendChild(productA);
+              productA.appendChild(productImage);
+              productA.appendChild(productItemContent);
+
+              productGrid.appendChild(productItem);
+            });
+          })
+          .catch((error) => {
+            // Xử lý lỗi ở đây
+            console.error(error);
+          });
+      }
+    </script>
+    <script>
+      function performSearch() {
+        var keyword = document.querySelector(".search-input").value;
+        var apiUrl =
+          "https://patronum.azurewebsites.net/api/HomePage/SearchByKeyword?keyword=" +
+          encodeURIComponent(keyword);
+
+        fetch(apiUrl)
+          .then((response) => response.json())
+          .then((data) => {
+            var productGrid = document.getElementById("product-list");
+            productGrid.innerHTML = "";
+
+            data.forEach((product) => {
+              var productItem = document.createElement("div");
+              productItem.classList.add(
+                "product_items",
+                "lazy",
+                "col-md-3",
+                "col-xl",
+                "col-4",
+                "px-5"
+              );
+
+              // Kiểm tra status của sản phẩm và thêm hình ảnh hot nếu cần
+              if (product.status === 1 || product.status === 2) {
+                var productHot = document.createElement("div");
+                productHot.classList.add("product_hot");
+                var hotImage = document.createElement("img");
+                hotImage.src = "./assets/iimg/hot.png";
+                productHot.appendChild(hotImage);
+                productItem.appendChild(productHot);
+              }
+
+              var productImage = document.createElement("div");
+              productImage.classList.add("product_items--img");
+              var productImageImg = document.createElement("img");
+              productImageImg.classList.add("truong", "col-12");
+              productImageImg.src = product.productImg;
+              productImage.appendChild(productImageImg);
+              productItem.appendChild(productImage);
+
+              var productItemContent = document.createElement("div");
+              productItemContent.classList.add("product_items--content");
+
+              var productName = document.createElement("p");
+              productName.classList.add("product_item_name");
+              productName.innerText = product.name;
+              productItemContent.appendChild(productName);
+
+              var productContact = document.createElement("div");
+              productContact.classList.add("product_contact");
+              productItemContent.appendChild(productContact);
+
+              var productPrice = document.createElement("div");
+              productPrice.classList.add("contact_text");
+              productPrice.innerHTML = "Giá: ";
+              productContact.appendChild(productPrice);
+
+              var productContactCall = document.createElement("a");
+              productContactCall.classList.add("contact_call");
+              productContact.appendChild(productContactCall);
+
+              var productCallIcon = document.createElement("div");
+              productCallIcon.classList.add("contact_call--icon");
+              productContactCall.appendChild(productCallIcon);
+
+              var cartIcon = document.createElement("i");
+              cartIcon.classList.add("fa-light", "fa-phone-volume");
+              productCallIcon.appendChild(cartIcon);
+
+              var productLienHe = document.createElement("p");
+              productLienHe.innerHTML = "Liên hệ";
+              productContactCall.appendChild(productLienHe);
+
+              var productAdd = document.createElement("div");
+              productAdd.classList.add("product_add");
+              productContact.appendChild(productAdd);
+
+              var productAddIcon = document.createElement("a");
+              productAddIcon.href = "";
+              productAdd.appendChild(productAddIcon);
+
+              var priceIcon = document.createElement("i");
+              priceIcon.classList.add("fa-light", "fa-cart-circle-plus");
+              product;
+              AddIcon.appendChild(priceIcon);
+
+              productItem.appendChild(productItemContent);
+              productGrid.appendChild(productItem);
+            });
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      }
+    </script>
+    <!--  -->
+    <!-- <script>
+      const productList = document.getElementById("product-list");
+
+      for (let i = 1; i <= 24; i++) {
+        const productHTML = `
+    <div class="product_items lazy col-md-3 col-xl col-4 px-5">
+      <div class="product_hot">
+        <img src="./assets/iimg/hot.png" alt="" />
+      </div>
+      <div class="product_items--img">
+        <img src="./assets/iimg/zyro-image-1.png" class="truong col-12" alt="" />
+      </div>
+      <div class="product_items--content">
+        <p class="product_item_name">zyro-image-1dvhasvdhjasvdhjasbdjasdjha</p>
+        <div class="product_contact">
+          <div class="contact_text">Giá:</div>
+          <a href="" class="contact_call">
+            <div class="contact_call--icon">
+              <i class="fa-light fa-phone-volume"></i>
+            </div>
+            <p>Liên hệ</p>
+          </a>
+          <div class="product_add">
+            <a href=""><i class="fa-light fa-cart-circle-plus"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+        productList.innerHTML += productHTML;
+      }
+
+      const products = productList.querySelectorAll(".product_items");
+
+      // Thay đổi nội dung của thẻ p trong phần tử thứ 5
+      products[4].querySelector("p.product_item_name").innerHTML =
+        "cái này Trường làm nè";
+      products[3].querySelector("p.product_item_name").innerHTML =
+        "cái này Trường làm nè";
+      // Thay đổi đường dẫn của ảnh trong phần tử thứ 5
+      products[4]
+        .querySelector(".truong")
+        .setAttribute("src", "./assets/iimg/2-piece flanged ball valves.png");
+      products[3]
+        .querySelector(".truong")
+        .setAttribute("src", "./assets/iimg/2-piece flanged ball valves.png");
+    </script> -->
+    <script src="script.js"></script>
+    <script>
+      AllPro();
+    </script>
+    <script>
+      $(document).ready(function () {
+        // Ẩn phần loading khi trang đã được tải hoàn toàn
+        $("#loading-overlay").hide();
+
+        // Hiển thị phần loading khi nhấn vào liên kết để chuyển trang
+        $("a").click(function () {
+          $("#loading-overlay").show();
+        });
+      });
+    </script>
+  </body>
+</html>
