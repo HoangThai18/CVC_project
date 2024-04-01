@@ -1,0 +1,447 @@
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .product-items {
+    flex: 0 0 auto;
+    width: 21% !important;
+  }
+}
+@media (min-width: 979px) and (max-width: 991px) {
+  .product-items {
+    flex: 0 0 auto;
+    width: 25% !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .product-items {
+    flex: 0 0 auto;
+    width: 27% !important;
+  }
+}
+/* PC  */
+
+@media (min-width: 1200px) {
+  /*  */
+
+  /*  */
+  .banner-index {
+    top: 97% !important;
+  }
+  .an-01 {
+    display: none !important;
+  }
+  .MT_customer {
+    display: none;
+  }
+
+  .submenu_none {
+    display: block;
+  }
+  .typical_items.row.col-xl-2 {
+    margin: 0;
+  }
+}
+/* 577px - 700px */
+@media (min-width: 577px) and (max-width: 760px) {
+  .product-items {
+    width: 38% !important;
+  }
+  .product_item_name {
+    font-size: 10px !important;
+  }
+  .banner {
+    height: 315px !important;
+  }
+  .contact_call > p {
+    padding-top: 10px;
+    font-size: 10px;
+  }
+
+  .a.contact_call {
+    margin-left: 0;
+  }
+  .product_add {
+    height: 28px !important;
+    width: 28px !important;
+  }
+  .fa-regular {
+    font-size: 5px;
+  }
+}
+
+/* Responesive danh muc ben phai */
+@media (min-width: 760px) and (max-width: 991px) {
+  #right-menu {
+    left: -68%;
+  }
+}
+@media (min-width: 974px) and (max-width: 1199px) {
+  #right-menu {
+    left: -51%;
+  }
+}
+@media (min-width: 577px) and (max-width: 762px) {
+  #right-menu {
+    left: -90%;
+  }
+}
+@media (min-width: 762px) and (max-width: 768px) {
+  #right-menu {
+    left: -90%;
+  }
+}
+@media (min-width: 974px) and (max-width: 992px) {
+  #right-menu {
+    left: -68% !important;
+  }
+}
+
+/* TABLET */
+@media (min-width: 577px) and (max-width: 1199px) {
+  .product-items {
+    height: 250px;
+    border-radius: 10px;
+    border: rgba(0, 0, 0, 0.09) solid 2px;
+    position: relative;
+    margin: 30px 0px;
+    margin-left: 30px !important;
+    margin-right: 27px !important;
+    cursor: pointer;
+  }
+  p.product_item_name {
+    height: 40px;
+  }
+
+  .product_add {
+  }
+  .contact_text {
+    font-size: 10px;
+    padding-top: 15px;
+  }
+  .contact_call {
+    padding-top: 8px;
+  }
+  .contact_call p {
+    font-size: 10px !important;
+    padding-top: 8px;
+  }
+  .product_items--content {
+    margin-top: 0 !important;
+  }
+  .product_item_name {
+    font-size: 14px;
+  }
+  .banner {
+    height: 315px;
+  }
+  .banner-index {
+    top: 98% !important;
+  }
+  .banner-index span {
+    width: 5px !important;
+    height: 5px !important;
+  }
+  .product_none {
+    display: block;
+  }
+
+  .MT_customer {
+    height: 50px;
+    overflow: hidden;
+    background-color: #fff;
+    margin-left: 25px;
+  }
+  .MT_customer.col-12 {
+    margin-top: 10px;
+  }
+  .MT_customer .patter {
+    height: 40px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    animation: slidet 16s infinite;
+  }
+
+  @keyframes slidet {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-10%);
+    }
+  }
+  .MT_customer .patter img {
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;
+  }
+  .col-12.col-xl-2.row.Th-dm-tong {
+    padding-right: 0;
+  }
+  .col-12.Th-set-pad {
+    padding: 0;
+    width: 97%;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  .banner-images {
+    width: 96% !important;
+  }
+
+  .typical_items-p {
+    font-size: 8px;
+    padding-top: 10px;
+  }
+  .typical_items--img.col-6 {
+    margin-top: 10px;
+  }
+  .form-group {
+  }
+  .form-group.col-xl-4.col-md-4.col-10 {
+    width: 90%;
+    margin-left: auto;
+  }
+
+  .header_bag.col-xl-1.col-md-1.col-2.Th-tooltip {
+    padding-right: 0 !important;
+  }
+  .Th-fix {
+    display: none;
+  }
+  /*ipad responsive  */
+  .typical_items.row.col-3.col-md-2.col-xl-2 {
+    padding: 0;
+    margin: 0;
+  }
+  /*  */
+
+  .Th-sub-add {
+    left: -236px;
+  }
+  .banner {
+    margin-top: 20px;
+  }
+  .banner.col-12.col-xl-8.container {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  #header {
+    height: 140px !important;
+  }
+  .product_add {
+    width: 20%;
+  }
+  .submenu_none {
+    display: none;
+  }
+  .customer {
+    display: none;
+  }
+  .Th-content {
+    display: flex;
+  }
+  .col-12.col-xl-2.row.Th-dm-tong {
+    order: 1;
+  }
+  .Th-set-pad {
+    margin-top: 10px !important;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .banner {
+    height: 215px !important;
+  }
+  .banner-index {
+    top: 98% !important;
+  }
+  .banner-index span {
+    width: 5px !important;
+    height: 5px !important;
+  }
+
+  .Th-submenu {
+    display: none !important;
+  }
+  #right-menu {
+    left: -80%;
+  }
+  .product_none {
+    display: none;
+  }
+
+  div#body {
+    margin-top: 70px;
+  }
+
+  /* Body */
+  /* Body top */
+  /* Danh muc */
+  .row.Th-content {
+    margin-right: 12px;
+    display: flex;
+  }
+  .col-12.col-xl-2.row.Th-dm-tong {
+    margin-left: 10px !important;
+    padding: 0;
+    order: 1;
+    margin-top: 10px;
+  }
+  .col-12.col-xl-2.row.Th-dm-tong .col-12 {
+    padding: 0;
+  }
+  .submenu_none {
+    display: none;
+  }
+
+  .customer {
+    display: none;
+  }
+  /* Banner */
+  .banner.col-12.col-xl-8 {
+    height: 230px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 10px;
+    height: 170px;
+  }
+  .banner-images {
+    left: 12px;
+  }
+  .banner-images img {
+    width: 100%;
+  }
+
+  /* Customer */
+  .MT_customer {
+    height: 50px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  .MT_customer.col-12 {
+    margin-top: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .MT_customer .patter {
+    height: 40px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    animation: slidet 16s infinite;
+  }
+
+  @keyframes slidet {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-40%);
+    }
+  }
+  .MT_customer .patter img {
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;
+  }
+
+  /* Danh muc tieu bieu */
+  /* Title */
+  p.title-top.col-12 {
+    margin-bottom: 0;
+    font-size: 14px;
+    height: 30px;
+  }
+  .typical_items--box.container.row {
+    padding: 0;
+  }
+  .typical_list.mt-2.container {
+    height: auto;
+  }
+  .typical_items.row.col-3 {
+    height: 115px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .typical_items.row.col-2 {
+    height: 75px;
+  }
+  .typical_items--img.col-6 {
+    height: 50px;
+  }
+
+  .typical_items--img img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .typical_items--img img {
+    width: 30px;
+    height: 30px;
+  }
+  .typical_items-p.col-12 {
+    padding: 0;
+    font-size: 12px;
+  }
+  /* Product */
+  /* product none */
+  .product_none--mobile {
+    display: none;
+  }
+  .product_list--items.row {
+    margin-top: -10px !important;
+    height: auto;
+    justify-content: center;
+  }
+  /* product title */
+  p.title-top.mt-3.col-4 {
+    margin: 0;
+    font-size: 16px;
+  }
+  .see-all > p {
+    font-size: 6px !important;
+  }
+  /* product-items */
+  .product_items.col-3.col-md-3.col-xl-2 {
+    height: 140px;
+    padding: 0px;
+  }
+  /* product content */
+  .product_items--content {
+    margin-top: 5px !important;
+    padding: 0px 3px !important;
+  }
+  /* Hot */
+  .product_hot img {
+    width: 70px !important;
+    height: 60px !important;
+    position: absolute !important;
+    top: -25px !important;
+    left: -12px !important;
+  }
+  /* product name */
+  .product_item_name {
+    width: 100% !important;
+    font-size: 8px !important;
+    margin-bottom: 2px;
+    width: 110%;
+    height: 35px !important;
+  }
+  /* product contact */
+  .product_contact {
+    font-size: 8px;
+  }
+  /* product icon */
+
+  .product_add {
+    height: 22px !important;
+    width: 22px !important;
+    bottom: 15px !important;
+  }
+  /* Chuyen Huong Trang */
+  a.page-link {
+    font-size: 12px;
+  }
+
+  /* Footer */
+}

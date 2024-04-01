@@ -1,0 +1,598 @@
+/* RESET CSS */
+* {
+  /* emmet */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  position: relative;
+  background-color: #f5f5f5;
+  font-family: "Roboto slab" !important; /*An chỉnh bỏ phần family */
+}
+#header {
+  height: 80px !important;
+  position: relative;
+  top: 0;
+  z-index: 1;
+}
+.search-input {
+  text-align: start;
+}
+div#body {
+  margin-bottom: 10px;
+  background-color: #f0f0f0f0;
+}
+.product.container {
+  background-color: white;
+  border-radius: 10px !important;
+}
+/* slider */
+.Set-slider {
+  height: 600px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  background: #000;
+  color: #000;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 93%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-free-mode > .swiper-wrapper {
+  transition-timing-function: ease-out;
+  margin: 7px auto !important;
+}
+.set-fontsize-tittle {
+  font-size: 20px;
+}
+
+.title-detail {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.105);
+}
+.title-detail-two {
+  display: flex;
+  align-items: center;
+  color: #191919;
+  font-weight: lighter;
+  font-size: 13px;
+  margin-left: 8px;
+  margin-top: 10px;
+}
+.title-detail-one {
+  color: #191919;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.set-mr {
+  margin-top: 15px !important;
+}
+/* slider */
+/*  */
+div#body {
+  height: auto;
+}
+
+.product {
+  height: 615px;
+}
+
+.similar_product {
+  margin-top: 20px !important;
+  height: 400px;
+  margin: 0;
+  margin-top: 45px !important;
+  border-top: #000 solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  position: relative;
+}
+.simmilar_title {
+  width: 16% !important;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: -18px;
+  font-size: 20px;
+  background-color: #f0f0f0;
+}
+.similar_list--items {
+  height: 80%;
+  width: 85.5% !important;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  padding: 0 !important;
+}
+.similar_item--box:hover {
+  border: #f53100 solid 1px;
+  border-radius: 5px;
+}
+.similar_item--box {
+  width: 95%;
+  height: 80%;
+  display: flex;
+}
+.similar_item--box a {
+  text-decoration: none;
+  width: 100%;
+}
+.similar_item {
+  background-color: #f0f0f0;
+  height: 120px;
+  border: #ccc solid 1px;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.similar_item--img {
+  width: 100%;
+  height: 100%;
+}
+.similar_item--img img {
+  width: 400%;
+  height: 100%;
+}
+.similar_item--content {
+  height: 100%;
+  padding-left: 15px;
+}
+.similar_item--des {
+  height: 65%;
+  padding-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.similar_item--des > p {
+  color: #000;
+}
+.product_contact {
+  height: 30%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.contact_text {
+  font-weight: 600;
+  color: #828181;
+}
+.contact_call p {
+  margin-bottom: 0;
+}
+.contact_call:hover {
+  font-weight: 700;
+}
+.contact_call {
+  color: #f53100;
+  margin-left: 10px;
+  display: flex;
+  font-weight: 600;
+  text-decoration: none;
+}
+.contact_call p {
+  height: 30%;
+  margin-left: 5px;
+}
+
+/* SAN PHAM DA XEM */
+.viewed_title {
+  width: 30% !important;
+  height: 20%;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  position: absolute;
+  top: -27px;
+}
+.viewed_title p {
+  margin-top: 10px;
+}
+.products_viewed {
+  margin-top: 35px !important;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-top: #000 solid 1px;
+}
+.view_item {
+  border: #ccc solid 1px;
+  width: 200px !important;
+  height: 80%;
+  margin-bottom: 15px;
+  margin-top: 20px !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5%;
+  background-color: #fff;
+  padding-bottom: 10px;
+}
+.view_item a {
+  text-decoration: none;
+}
+.view_item--content {
+  width: 100%;
+  height: 80% !important;
+}
+.view_item--content .view_item--p {
+  color: #000;
+}
+.similar_list--items {
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+}
+.view_item img {
+  width: 100%;
+  height: 50%;
+  background-color: #fff;
+}
+.title-price {
+  display: flex;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.title-price i {
+  margin-top: 5px;
+  padding-left: 10px;
+  color: #f53100;
+}
+.title-lienhe-one {
+  color: #828181;
+}
+.title-lienhe {
+  padding-left: 5px;
+  font-size: 20px;
+  color: #f53100;
+}
+
+.detail-modal:hover {
+  color: #f53100;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.detail-modal {
+  margin-left: auto;
+  text-decoration: none;
+  color: #2e7b89;
+}
+span {
+  cursor: pointer;
+}
+.number {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0px;
+  padding-top: 0px;
+  margin-right: 40px !important;
+}
+.minus {
+  width: 70px;
+  height: 40px;
+  background-color: #ffff;
+  border-radius: 10px 0px 0px 10px;
+  padding: 8px 5px 8px 5px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  top: 10px;
+}
+.set-fit {
+  width: 70px;
+  height: 40px;
+}
+.plus {
+  width: 70px;
+  height: 40px;
+  background-color: #ffff;
+  border-radius: 0px 10px 10px 0px;
+  padding: 8px 5px 8px 5px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+input {
+  height: 34px;
+  width: 100px;
+  text-align: center;
+  font-size: 26px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+}
+.set-add {
+  font-size: 10px;
+  margin-bottom: 0px !important;
+  margin-top: 4px !important;
+}
+.swiper-slide {
+  border-radius: 10px;
+  object-fit: fill;
+}
+.swiper-slide {
+  border: 1px solid rgba(0, 0, 0, 0.151);
+}
+.swiper-slide img {
+  object-fit: scale-down;
+
+  border-radius: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 35px !important;
+  height: 50px !important;
+  margin: 5px;
+  border: 1px solid black;
+  background-color: #c8c1c1;
+  color: black !important;
+  border-radius: 5px;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 25px !important;
+  font-weight: 900 !important;
+}
+.btn-add {
+  border-radius: 5px;
+  height: 54px;
+  background-color: #c64a4a;
+  width: 173px;
+  color: white;
+  font-size: 16px;
+  border: 1px solid rgb(203, 203, 203) !important;
+}
+.btn-add p {
+  padding-top: 12px;
+}
+.btn-buy p {
+  padding-top: 12px;
+}
+.btn-buy {
+  width: 109px;
+  height: 54px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #c64a4a;
+  color: white;
+  font-size: 16px;
+  border: 1px solid rgb(203, 203, 203) !important;
+}
+.btn-add:hover {
+  background-color: white;
+  color: #f53100;
+  border: 2px solid #c64a4a;
+}
+.btn-buy:hover {
+  background-color: white;
+  color: #f53100;
+  border: 1px solid #c64a4a;
+}
+
+/* CSS cho modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 500px;
+
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  top: -200px;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 1400px;
+  height: 1000px;
+}
+.modal-open {
+  overflow: hidden;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.contact_add:hover {
+  background-color: #c64a4a;
+}
+.contact_add {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  border-radius: 50%;
+  margin-left: 25px;
+  background-color: #f53100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Th-container-logo {
+  max-width: 1300px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* container */
+/* Style the buttons inside the tab */
+.Th-tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  width: 395px;
+}
+
+/* Change background color of buttons on hover */
+.Th-tab button:hover {
+  border-bottom: 5px solid #f53100;
+  color: #f53100;
+}
+.Th-tab button > h2:hover {
+  color: #f53100;
+}
+/* Create an active/current tablink class */
+.Th-tab button.active {
+  background-color: #ffffff;
+  border-bottom: 5px solid #f53100;
+}
+.Th-tab button > h2.active {
+  color: white;
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+
+  border-top: none;
+  margin-top: 50px;
+  width: 1270px;
+  height: 240px;
+  border-radius: 5px;
+}
+.Th-tab button > h2 {
+  color: black;
+}
+.Th-tab-fi > button {
+  width: 295px;
+  height: 168px;
+}
+/*img-sub  */
+.Th-img-sub {
+  margin-left: -13px;
+}
+.Th-tabcon-sun {
+  display: flex;
+  width: 1270px;
+}
+.br5 {
+  width: 330px;
+  height: 240px;
+  border-radius: 5px 0px 0px 5px;
+  object-fit: cover;
+}
+.Th-text-title {
+  background-color: #aaa;
+  align-items: center;
+  width: 100%;
+  padding-left: 90px;
+  padding-right: 90px;
+  color: #191919;
+
+  border-radius: 0px 5px 5px 0px;
+}
+.Th-tab {
+  display: flex;
+
+  justify-content: space-between;
+}
+.set-img {
+  object-fit: none;
+}
+.set-i img {
+  height: 300px;
+}
+.set-as {
+  margin-left: 30%;
+  margin-right: 40%;
+}
+.set-i {
+}
